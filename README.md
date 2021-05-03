@@ -8,8 +8,16 @@ On the server side we deserialize to a byte array and deserialize into a struct.
 
 To write to a TCP port in Linux you can use this handy trick: `echo "foo" > /dev/tcp/localhost/3333`
 
+## Adding to GitHub
 
-# Adding to GitHub
 `hub create` will create a repo of the same name under your account in GitHub.
 `hub` is being replaced by a official new command line tool but I had issues on Linux with that.
 
+## Compiling with Xargo
+
+```
+$ rustup toolchain install nightly
+$ rustup override set nightly
+$ rustup component add rust-src
+$ cargo install xargo
+```
