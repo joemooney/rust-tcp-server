@@ -15,9 +15,9 @@ To write to a TCP port in Linux you can use this handy trick: `echo "foo" > /dev
 
 ## Compiling with Xargo
 
-```
-$ rustup toolchain install nightly
-$ rustup override set nightly
-$ rustup component add rust-src
-$ cargo install xargo
+```bash
+rustup toolchain install nightly
+rustup override set nightly
+rustup component add rust-src
+cargo install xargo
 ```
